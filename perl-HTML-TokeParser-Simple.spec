@@ -9,7 +9,7 @@ Summary:	Easy to use HTML::TokeParser interface
 Summary(pl):	£atwy w u¿yciu interfejs do HTML::TokeParser
 Name:		perl-HTML-TokeParser-Simple
 Version:	2.1
-Release:	1
+Release:	2
 License:	Same as Perl itself
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -51,5 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/%{pdir}
+%{perl_vendorlib}/%{pdir}/*
 %{_mandir}/man3/*
