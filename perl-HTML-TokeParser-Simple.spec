@@ -8,15 +8,18 @@
 Summary:	Easy to use HTML::TokeParser interface
 Summary(pl):	£atwy w u¿yciu interfejs do HTML::TokeParser
 Name:		perl-HTML-TokeParser-Simple
-Version:	2.1
-Release:	2
+Version:	2.2
+Release:	1
 # same as perl
-License:	GPL v1+ or Artistic
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d93cdfa3f816664d35a20d8bff579dca
+# Source0-md5:	65b1974178b129c8b0efd1d2dcd91efb
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-HTML-Parser >= 3.28
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,7 +47,6 @@ potrzebne dane.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
 
 %{?with_tests:%{__make} test}
@@ -61,5 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/%{pdir}/*
+%{perl_vendorlib}/HTML/*
 %{_mandir}/man3/*
