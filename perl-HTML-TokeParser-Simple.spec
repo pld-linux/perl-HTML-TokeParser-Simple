@@ -1,7 +1,7 @@
-
+#
 # Conditional build:
 %bcond_without tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	TokeParser-Simple
@@ -10,7 +10,8 @@ Summary(pl):	£atwy w u¿yciu interfejs do HTML::TokeParser
 Name:		perl-HTML-TokeParser-Simple
 Version:	2.1
 Release:	2
-License:	Same as Perl itself
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d93cdfa3f816664d35a20d8bff579dca
@@ -27,6 +28,15 @@ more self-documenting) questions about the tokens returned.
 Specifically, there are 7 is_foo type methods and 5 return_bar type
 methods. The is_ methods allow you to determine the token type and the
 return_ methods get the data that you need.
+
+%description -l pl
+HTML::TokeParser to dosyæ popularna metoda analizowania HTML-a. jednak
+zwracane tokeny nie s± zbyt intuicyjne do przeanalizowania.
+HTML::TokeParser::Simple pozwala wykonywaæ bardziej intuicyjne
+(samodokumentuj±ce siê) zapytania dotycz±ce zwracanych tokenów. W
+szczególno¶ci jest 7 metod typu is_foo oraz 5 metod typu return_bar.
+Metody is_ pozwalaj± okre¶liæ typ tokenu, a metody return_ - pobraæ
+potrzebne dane.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
