@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	TokeParser-Simple
-Summary:	Easy to use HTML::TokeParser interface
-Summary(pl):	£atwy w u¿yciu interfejs do HTML::TokeParser
+Summary:	HTML::TokeParser::Simple - easy to use HTML::TokeParser interface
+Summary(pl):	HTML::TokeParser::Simple - ³atwy w u¿yciu interfejs do HTML::TokeParser
 Name:		perl-HTML-TokeParser-Simple
 Version:	2.2
 Release:	1
