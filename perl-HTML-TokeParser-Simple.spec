@@ -3,8 +3,8 @@
 %bcond_without tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTML
-%define	pnam	TokeParser-Simple
+%define		pdir	HTML
+%define		pnam	TokeParser-Simple
 Summary:	HTML::TokeParser::Simple - easy to use HTML::TokeParser interface
 Summary(pl):	HTML::TokeParser::Simple - ³atwy w u¿yciu interfejs do HTML::TokeParser
 Name:		perl-HTML-TokeParser-Simple
