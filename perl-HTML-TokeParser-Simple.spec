@@ -8,17 +8,18 @@
 Summary:	HTML::TokeParser::Simple - easy to use HTML::TokeParser interface
 Summary(pl):	HTML::TokeParser::Simple - ³atwy w u¿yciu interfejs do HTML::TokeParser
 Name:		perl-HTML-TokeParser-Simple
-Version:	2.2
+Version:	3.13
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	65b1974178b129c8b0efd1d2dcd91efb
+# Source0-md5:	edcb07bf43be71713f8e5935f8c80a5a
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-HTML-Parser >= 3.28
+BuildRequires:	perl-Sub-Override
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
