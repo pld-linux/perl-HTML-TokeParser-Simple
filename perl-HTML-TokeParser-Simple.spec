@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	TokeParser-Simple
 Summary:	HTML::TokeParser::Simple - easy to use HTML::TokeParser interface
-Summary(pl):	HTML::TokeParser::Simple - ³atwy w u¿yciu interfejs do HTML::TokeParser
+Summary(pl.UTF-8):   HTML::TokeParser::Simple - Å‚atwy w uÅ¼yciu interfejs do HTML::TokeParser
 Name:		perl-HTML-TokeParser-Simple
 Version:	3.14
 Release:	1
@@ -33,13 +33,13 @@ Specifically, there are 7 is_foo type methods and 5 return_bar type
 methods. The is_ methods allow you to determine the token type and the
 return_ methods get the data that you need.
 
-%description -l pl
-HTML::TokeParser to dosyæ popularna metoda analizowania HTML-a. jednak
-zwracane tokeny nie s± zbyt intuicyjne do przeanalizowania.
-HTML::TokeParser::Simple pozwala wykonywaæ bardziej intuicyjne
-(samodokumentuj±ce siê) zapytania dotycz±ce zwracanych tokenów. W
-szczególno¶ci jest 7 metod typu is_foo oraz 5 metod typu return_bar.
-Metody is_ pozwalaj± okre¶liæ typ tokenu, a metody return_ - pobraæ
+%description -l pl.UTF-8
+HTML::TokeParser to dosyÄ‡ popularna metoda analizowania HTML-a. jednak
+zwracane tokeny nie sÄ… zbyt intuicyjne do przeanalizowania.
+HTML::TokeParser::Simple pozwala wykonywaÄ‡ bardziej intuicyjne
+(samodokumentujÄ…ce siÄ™) zapytania dotyczÄ…ce zwracanych tokenÃ³w. W
+szczegÃ³lnoÅ›ci jest 7 metod typu is_foo oraz 5 metod typu return_bar.
+Metody is_ pozwalajÄ… okreÅ›liÄ‡ typ tokenu, a metody return_ - pobraÄ‡
 potrzebne dane.
 
 %prep
