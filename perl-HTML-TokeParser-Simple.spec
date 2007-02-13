@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	TokeParser-Simple
 Summary:	HTML::TokeParser::Simple - easy to use HTML::TokeParser interface
-Summary(pl.UTF-8):   HTML::TokeParser::Simple - łatwy w użyciu interfejs do HTML::TokeParser
+Summary(pl.UTF-8):	HTML::TokeParser::Simple - łatwy w użyciu interfejs do HTML::TokeParser
 Name:		perl-HTML-TokeParser-Simple
 Version:	3.14
 Release:	1
