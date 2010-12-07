@@ -65,5 +65,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/HTML/*
-%{_mandir}/man3/*
+%{perl_vendorlib}/HTML/TokeParser
+%{_mandir}/man3/HTML::TokeParser::Simple*.3pm*
