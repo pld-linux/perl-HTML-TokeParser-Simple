@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	HTML
 %define		pnam	TokeParser-Simple
 Summary:	HTML::TokeParser::Simple - easy to use HTML::TokeParser interface
